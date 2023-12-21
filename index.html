@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html lang='ja'>
-<head>
-  <meta charset='utf-8'>
-  <title>たいとる</title>
-  <meta property="og:title" content="たいとる">
-  <meta property="og:description" content="せつめいせつめい">
-  <meta name="theme-color" content="#ECECF7">
-  <meta name="msapplication-TileColor" content="#ECECF7">
-  <link rel="icon" type="image/png" xhref="icon.png">
-  <link rel="apple-touch-icon" xhref="icon.png">
-  <meta name="msapplication-square310x310logo" xcontent="icon.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://yourdomain/ogp.jpg">
-  <meta name="twitter:image" content="https://yourdomain/ogp.jpg">
+<html lang="ja">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生ポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <div class=header>
-    <h1>私のホームページ</h1>
-    <div>せつめいはまだない。</div>
-  </div>
-  <div class=main>
-    <div>
-      <h2>クラブ</h2>
-      <div>
-        水泳部
-      </div>
-    </div>
+  <body>
+    <header>
+      <h1>三嶋 倫太郎</h1>
+      <p>高専4年 メカトロニクスコース</p>
+    </header>
 
-    <div>
-      <h2>趣味</h2>
-      <div>
-        YouTube
-      </div>
-    </div>
-  </div>
-  <div class=footer>
-    20YY/MM/DD
-  </div>
-</body>
+    <section id="skills">
+      <h2>SKILL SET</h2>
+      <ul>
+        <li>卓上旋盤、卓上ボール盤、レーザーカッタ、3Dプリンタ</li>
+        <li>Creo Parametric(3D CAD)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>成果物とプロジェクト</h2>
+
+      <article>
+        <h3>Tkinterを用いたシステムの作成</h3>
+        <p>指定された要件と仕様に従ったシステムをTkinterを使ってpythonで開発した。要件と仕様は以下の通りである。
+          <ol>
+            <li>言語は python で、Tkinter を import している</li>
+            <li>「window」「ボタン」「テキストを表示する枠」が設置されている。</li>
+            <li>動作として、「window が起動」され、そこには、「何らかの機能を持ったボタン」が設置されている。ボタンが押され
+              ると、それに対応して、何らかの機能が発動する。</li>
+          </ol>
+          上記の条件に基づいてPythonとTkinterを使用して簡単な四則演算ができる電卓のプログラムを開発した。
+          <br>このプログラムでは、数値ボタン(0-9)と四則演算ボタン(+, -, *, /)、イコール(=)ボタン、クリア(Clear)ボタンを表示している。数値ボタンと四則演算ボタンをクリックすると、入力フィールドに対応する数値や演算子が表示され、イコール(=)ボタンをクリックすると、入力された数式を評価し結果を表示する。クリア(Clear)ボタンをクリックすると、入力フィールドがクリアされる。
+        </p>
+        <img src="cad_project.jpg" alt="CADプロジェクト">
+      </article>
+
+
+    </section>
+
+    <section id="research">
+      <h2>グループ研究活動(基礎研究)</h2>
+      <p>高専4年次に、「基礎研究」と題したグループ研究活動を行った。
+<br>この基礎研究とは、コース内で5人程のグループを結成し、約半年の期間をかけてテーマとなるプロジェクトを遂行するというものである。
+<br>今回のプロジェクトの概要は、SNSで風評被害を受け、廃業の危機に直面している小規模な回転寿司屋を<br>メカトロニクスの技術を駆使して救い上げるというものである。
+<br>今回、チーム内での私の位置づけは機械班であった。機械班では、寿司を乗せる皿を排出し、寿司を受け取った後に回転しているレーンに寿司を提供をする機械を制作した。
+</p>
+      <img src="research_project.jpg" alt="基礎研究プロジェクト">
+
+    </section>
+
+    <section id="tools">
+      <h2>利用した工作機械とプログラミング言語・ソフトウェア</h2>
+      <p>卓上糸のこ盤、レーザーカッタ、3Dプリンタなどの工作機械に加え、Python言語、Creo Parametricを学習・使用。</p>
+    </section>
+
+
+  </body>
+
 </html>
